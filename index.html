@@ -242,269 +242,261 @@
         color: black;
     }
 
-    .table-container {
-        display: flex;
-        gap: 20px;
-        width: 100%;
-    }
+	.table-container {
+   	 display: flex;
+    	gap: 20px;
+    	width: 100%;
+	}
 
-    .estimate-table {
-        width: 77%;
-        table-layout: fixed;
-        border-collapse: collapse;
-        margin-top: 20px;
-        background-color: rgba(255, 255, 255, 0.2);
-        border-radius: 8px;
-        overflow: hidden;
-    }
+.estimate-table {
+    width: 77%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
 
-    .estimate-table th,
-    .estimate-table td {
-        border: 1px solid #ccc;
-        padding: 6px;
-        text-align: center;
-        background-color: #ffffff;
-        color: #222;
-        font-size: 15px;
-    }
+.estimate-table th,
+.estimate-table td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #222;
+    font-size: 15px;
+}
 
-    .estimate-table th {
-        background-color: #00695c;
-        color: #ffffff;
-        font-weight: 600;
-        letter-spacing: 0.2px;
-    }
+.estimate-table th {
+    background-color: #00695c;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
 
-    /* Optimized column widths */
-    .estimate-table th:nth-child(1),
-    .estimate-table td:nth-child(1) {
-        width: 20px;
-    }
+/* Optimized column widths */
+.estimate-table th:nth-child(1),
+.estimate-table td:nth-child(1) {
+    width: 20px;
+}
 
-    .estimate-table th:nth-child(2),
-    .estimate-table td:nth-child(2) {
-        width: 170px;
-        text-align: left;
-    }
+.estimate-table th:nth-child(2),
+.estimate-table td:nth-child(2) {
+    width: 170px;
+    text-align: left;
+}
 
-    .estimate-table th:nth-child(3),
-    .estimate-table td:nth-child(3) {
-        width: 28px;
-        padding: 0;
-    }
+.estimate-table th:nth-child(3),
+.estimate-table td:nth-child(3) {
+    width: 28px;
+    padding: 0;
+}
 
-    .estimate-table th:nth-child(4),
-    .estimate-table td:nth-child(4) {
-        width: 28px;
-    }
+.estimate-table th:nth-child(4),
+.estimate-table td:nth-child(4) {
+    width: 28px;
+}
 
-    .estimate-table th:nth-child(5),
-    .estimate-table td:nth-child(5) {
-        width: 40px;
-    }
+.estimate-table th:nth-child(5),
+.estimate-table td:nth-child(5) {
+    width: 40px;
+}
 
-    .estimate-table th:nth-child(6),
-    .estimate-table td:nth-child(6),
-    .estimate-table th:nth-child(7),
-    .estimate-table td:nth-child(7) {
-        width: 48px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+.estimate-table th:nth-child(6),
+.estimate-table td:nth-child(6) {
+    width: 48px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
-    .estimate-table th:nth-child(8),
-    .estimate-table td:nth-child(8) {
-        width: 45px;
-    }
+.estimate-table th:nth-child(7),
+.estimate-table td:nth-child(7) {
+    width: 180px;
+    text-align: left;
+    font-size: 15px;
+}
 
-    .estimate-table th:nth-child(9),
-    .estimate-table td:nth-child(9) {
-        width: 180px;
-        text-align: left;
-        font-size: 15px;
-    }
+.estimate-table tr.selected {
+    background-color: #2ab29e !important;
+    color: white !important;
+}
 
-    .estimate-table tr.selected {
-        background-color: #2ab29e !important;
-        color: white !important;
-    }
+.estimate-table tr.selected td {
+    background-color: #2ab29e !important;
+    color: white !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-    .estimate-table tr.selected td {
-        background-color: #2ab29e !important;
-        color: white !important;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
+.estimate-table tr.selected td:first-child {
+    background-color: #1e8c7d !important;
+    font-weight: bold;
+    color: white !important;
+}
 
-    .estimate-table tr.selected td:first-child {
-        background-color: #1e8c7d !important;
-        font-weight: bold;
-        color: white !important;
-    }
+.qty-input {
+    width: 100%;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 3px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
 
-    .qty-input {
-        width: 100%;
-        border: 1px solid #ccc;
-        text-align: center;
-        padding: 3px;
-        box-sizing: border-box;
-        font-size: 12px;
-    }
+.total-row {
+    font-weight: bold;
+    background-color: #3b4d61 !important;
+    color: #ffffff !important;
+    text-align: center;
+}
 
-    .total-row {
-        font-weight: bold;
-        background-color: #3b4d61 !important;
-        color: #ffffff !important;
-        text-align: center;
-    }
+.total-row td {
+    background-color: #3b4d61 !important;
+    color: #ffffff !important;
+    text-align: center;
+}
 
-    .total-row td {
-        background-color: #3b4d61 !important;
-        color: #ffffff !important;
-        text-align: center;
-    }
+.calculation-row {
+    font-weight: bold;
+    background-color: #3b4d61 !important;
+    color: #ffffff !important;
+    text-align: center;
+}
 
-    .calculation-row {
-        font-weight: bold;
-        background-color: #3b4d61 !important;
-        color: #ffffff !important;
-        text-align: center;
-    }
+.calculation-row td {
+    background-color: #3b4d61 !important;
+    color: #ffffff !important;
+    text-align: center;
+}
 
-    .calculation-row td {
-        background-color: #3b4d61 !important;
-        color: #ffffff !important;
-        text-align: center;
-    }
+.show-cost-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
-    .show-cost-btn {
-        margin-top: 20px;
-        padding: 10px 20px;
-        background-color: #000000;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 16px;
-    }
+.show-cost-btn:hover {
+    background-color: #0d1137;
+}
 
-    .show-cost-btn:hover {
-        background-color: #0d1137;
-    }
-    
-    .cost-details-container {
-        display: none;
-        background-color: white;
-        color: black;
-        padding: 20px;
-        border-radius: 8px;
-        margin-top: 15px;
-        width: 70%;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
-    
-    .consumption-header {
-        font-size: 16px;
-        font-weight: bold;
-        color: #004A51;
-        margin-bottom: 15px;
-        padding-bottom: 5px;
-        border-bottom: 1px solid #ddd;
-    }
-    
-    .consumption-details {
-        margin-bottom: 25px;
-    }
-    
-    .consumption-row {
-        display: flex;
-        margin-bottom: 15px;
-    }
-    
-    .consumption-label {
-        font-weight: bold;
-        width: 200px;
-    }
-    
-    .consumption-value {
-        flex-grow: 1;
-    }
-    
-    .summary-table {
-        width: 80%;
-        border-collapse: collapse;
-        margin-top: 15px;
-    }
-    
-    .summary-table th {
-        background-color: #00695c;
-        color: white;
-        padding: 8px 12px;
-        text-align: left;
-        font-weight: 500;
-    }
-    
-    .summary-table td {
-        padding: 8px 12px;
-        border-bottom: 1px solid #eee;
-    }
-    
-    .amount-column {
-        text-align: right;
-        width: 60px;
-    }
-    
-    .summary-table tr:last-child td {
-        border-bottom: none;
-        font-weight: bold;
-        background-color: #f5f5f5;
-    }
+.cost-details-container {
+    display: none;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    width: 70%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
 
-    /* New Tariff Rates Box */
-    .tariff-rates-box {
-        width: 20%;
-        background-color: rgba(255, 255, 255, 0.2);
-        padding: 15px;
-        border-radius: 8px;
-        margin-top: 20px;
-    }
+.consumption-header {
+    font-size: 16px;
+    font-weight: bold;
+    color: #004A51;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
 
-    .tariff-rates-header {
-        font-size: 16px;
-        font-weight: bold;
-        margin-bottom: 15px;
-        text-align: center;
-        padding-bottom: 5px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    }
+.consumption-details {
+    margin-bottom: 25px;
+}
 
-    .tariff-rate-item {
-        margin-bottom: 15px;
-    }
+.consumption-row {
+    display: flex;
+    margin-bottom: 15px;
+}
 
-    .tariff-rate-label {
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
+.consumption-label {
+    font-weight: bold;
+    width: 200px;
+}
 
-    .tariff-rate-input {
-        width: 80%;
-        padding: 8px;
-        border-radius: 4px;
-        border: 1px solid #ccc;
-        background-color: white;
-        color: black;
-    }
+.consumption-value {
+    flex-grow: 1;
+}
 
-    .tariff-rate-unit {
-        margin-left: 5px;
-    }
+.summary-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.summary-table th {
+    background-color: #00695c;
+    color: white;
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.summary-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.amount-column {
+    text-align: right;
+    width: 60px;
+}
+
+.summary-table tr:last-child td {
+    border-bottom: none;
+    font-weight: bold;
+    background-color: #f5f5f5;
+}
+
+/* New Tariff Rates Box */
+.tariff-rates-box {
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.tariff-rates-header {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tariff-rate-item {
+    margin-bottom: 15px;
+}
+
+.tariff-rate-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tariff-rate-input {
+    width: 80%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: black;
+}
+
+.tariff-rate-unit {
+    margin-left: 5px;
+}
 .button-group {
     display: flex;
     gap: 10px;
     margin-top: 20px;
 }
-
 </style>
 </head>
 <body>
@@ -623,218 +615,183 @@
                     <th>Qty.</th>
                     <th>Unit</th>
                     <th>Rate in Rs.</th>
-                    <th>Cash in Rs.</th>
-                    <th>Store in Rs.</th>
                     <th>Total in Rs.</th>
                     <th>Reference</th>
                 </tr>
             </thead>
             <tbody>
-                <tr data-base-cash="0.00" data-base-store="4268.52" data-base-total="4268.52">
+                <tr data-base-total="4268.52">
                     <td>1</td>
                     <td>Supply of single phase pre-paid energy meter, 240VAC, 50 Hz</td>
                     <td><input type="number" class="qty-input" value="1" min="1"></td>
                     <td>No</td>
                     <td>4268.52</td>
-                    <td>0.00</td>
-                    <td>4268.52</td>
                     <td>4268.52</td>
                     <td>Loa No:KHURDA ROAD DIVISION- ELECTRICAL / e-Tender-Elect-G-08-20 /01524820022100 dtd 14.07.2020</td>
                 </tr>
-                <tr data-base-cash="153.33" data-base-store="1380.01" data-base-total="1533.34">
+                <tr data-base-total="11476.98">
                     <td>2</td>
-                    <td>Supply of wall mounting type metering junction box with transperent lid</td>
+                    <td>Supply of three phase 4 wire pre-paid energy meter, Input voltage 3X240V L-N, 50 Hz</td>
                     <td><input type="number" class="qty-input" value="1" min="1"></td>
                     <td>No</td>
-                    <td>1533.34</td>
-                    <td>153.33</td>
-                    <td>1380.01</td>
-                    <td>1533.34</td>
-                    <td>LoA No: ELECTRICAL / e-Tender-Elect-G-57-22 /10817810072822, dtd 03.03.2023</td>
+                    <td>11476.98</td>
+                    <td>11476.98</td>
+                    <td>Loa No:KHURDA ROAD DIVISION- ELECTRICAL / e-Tender-Elect-G-08-20 /01524820022100 dtd 14.07.2020</td>
                 </tr>
-                <tr data-base-cash="153.33" data-base-store="1380.01" data-base-total="1533.34">
+                <tr data-base-total="1533.34">
                     <td>3</td>
                     <td>Supply of wall mounting type metering junction box with transperent lid</td>
                     <td><input type="number" class="qty-input" value="1" min="1"></td>
                     <td>No</td>
                     <td>1533.34</td>
-                    <td>153.33</td>
-                    <td>1380.01</td>
                     <td>1533.34</td>
                     <td>LoA No: ELECTRICAL / e-Tender-Elect-G-57-22 /10817810072822, dtd 03.03.2023</td>
                 </tr>
-                <tr data-base-cash="329.88" data-base-store="2968.91" data-base-total="3298.79">
+                <tr data-base-total="3298.79">
                     <td>4</td>
                     <td>Supply of wall mounting type metering junction box with transperent lid for three phase meters.</td>
                     <td><input type="number" class="qty-input" value="1" min="1"></td>
                     <td>No</td>
                     <td>3298.79</td>
-                    <td>329.88</td>
-                    <td>2968.91</td>
                     <td>3298.79</td>
                     <td>Loa No: KHURDA ROAD DIVISION-ELECTRICAL/ e-Tender-Elect-G-19-22/ 00876310063926 , dtd 18.10.2022</td>
                 </tr>
-                <tr data-base-cash="0.00" data-base-store="1959.26" data-base-total="1959.26">
+                <tr data-base-total="1959.26">
                     <td>5</td>
                     <td>Supply of 10-60A single phase LCD meter</td>
                     <td><input type="number" class="qty-input" value="1" min="1"></td>
                     <td>No</td>
                     <td>1959.26</td>
-                    <td>0.00</td>
-                    <td>1959.26</td>
                     <td>1959.26</td>
                     <td>LoA No: ELECTRICAL / e-Tender-Elect-G-57-22 /10817810072822, dtd 03.03.2023</td>
                 </tr>
-                <tr data-base-cash="0.00" data-base-store="7756.92" data-base-total="7756.92">
+                <tr data-base-total="7756.92">
                     <td>6</td>
                     <td>Supply of 3-phase four wire tri vector current meter 10-60Amp</td>
                     <td><input type="number" class="qty-input" value="1" min="1"></td>
                     <td>No</td>
                     <td>7756.92</td>
-                    <td>0.00</td>
-                    <td>7756.92</td>
                     <td>7756.92</td>
                     <td>Loa No: KHURDA ROAD DIVISION-ELECTRICAL/ e-Tender-Elect-G-19-22/ 00876310063926 , dtd 18.10.2022</td>
                 </tr>
-                <tr data-base-cash="0.00" data-base-store="128.24" data-base-total="128.24">
+                <tr data-base-total="128.24">
                     <td>7</td>
                     <td>Supply of three and half core LT UG Al armoured cable XLPE of 25 Sq.mm size having heat resisting insulation</td>
                     <td><input type="number" class="qty-input" value="1" min="1"></td>
                     <td>Mtr</td>
                     <td>128.24</td>
-                    <td>0.00</td>
-                    <td>128.24</td>
                     <td>128.24</td>
                     <td>KHURDA ROAD DIVISION-ELECTRICAL / e-Tender-Elect-G-40-22 /10774400068820,dtd 30.12.2022</td>
                 </tr>
-                <tr data-base-cash="0.00" data-base-store="80.50" data-base-total="80.50">
+                <tr data-base-total="80.50">
                     <td>8</td>
                     <td>Supply of PVC Insulated Copper Cable Single and Multi - Core Circular Sheathed Cable with Flexible Conductor as per IS:694 (Version 2) 4 sqmm, 1 Core</td>
                     <td><input type="number" class="qty-input" value="1" min="1"></td>
                     <td>Meter</td>
                     <td>80.50</td>
-                    <td>0.00</td>
-                    <td>80.50</td>
                     <td>80.50</td>
                     <td>NFR PO: NFRCON/02245522201248 dt. 01-OCT-2024</td>
                 </tr>
-                <tr data-base-cash="0.00" data-base-store="120.50" data-base-total="120.50">
+                <tr data-base-total="120.50">
                     <td>9</td>
                     <td>Supply PVC Insulated Copper Cable Single and Multi - Core Circular Sheathed Cable with Flexible Conductor as per IS:694 (Version 2) 6 sqmm, 1 Core</td>
                     <td><input type="number" class="qty-input" value="1" min="1"></td>
                     <td>Meter</td>
                     <td>120.50</td>
-                    <td>0.00</td>
-                    <td>120.50</td>
                     <td>120.50</td>
                     <td>NFR PO: NFRCON/02245521201246 dt. 01-OCT-2024</td>
                 </tr>
-                <tr data-base-cash="0.00" data-base-store="146.45" data-base-total="146.45">
+                <tr data-base-total="146.45">
                     <td>10</td>
                     <td>Supply of Thin walled e-beam irradiation flexible cable with copper conductor working voltage 750V, grade size 10 sq. mm, as per RDSO Specn. No. ELRS/SPEC/ELC/0019 Rev-4 of February -2018. THERMO CABLES</td>
                     <td><input type="number" class="qty-input" value="1" min="1"></td>
                     <td>Meter</td>
                     <td>146.45</td>
-                    <td>0.00</td>
-                    <td>146.45</td>
                     <td>146.45</td>
                     <td>CR Po: CR/41241113105304 dt. 03-OCT-2024</td>
                 </tr>
-                <tr data-base-cash="0.00" data-base-store="410.64" data-base-total="410.64">
+                <tr data-base-total="410.64">
                     <td>11</td>
                     <td>Electron Beam irradiated cured thin walled, Multistranded Single Core, Copper flexible Cable of Size: 16 Sq.mm Grade Voltage: 1.8/3.0 KV as per RDSO Specn. No. ELRS/SPEC/ELC/0019, Rev - "2" Feb-20</td>
                     <td><input type="number" class="qty-input" value="1" min="1"></td>
                     <td>Meter</td>
                     <td>410.64</td>
-                    <td>0.00</td>
-                    <td>410.64</td>
                     <td>410.64</td>
                     <td>NFR PO No: NFR/40240500100027 dt. 02-JAN-2025</td>
                 </tr>
-                <tr data-base-cash="89.45" data-base-store="805.01" data-base-total="894.46">
+                <tr data-base-total="894.46">
                     <td>12</td>
                     <td>Supply, fixing, testing & commissioning of 32 A MCB, DP, 10 kA , C curve with metal enclosure</td>
                     <td><input type="number" class="qty-input" value="1" min="1"></td>
                     <td>No</td>
                     <td>894.46</td>
-                    <td>89.45</td>
-                    <td>805.01</td>
                     <td>894.46</td>
                     <td>Loa No:KHURDA ROAD DIVISION-ELECTRICAL/e-Tender-Elect-G-62-23/01196220100938,dtd 15.04.2024</td>
                 </tr>
-                <tr data-base-cash="165.03" data-base-store="1485.24" data-base-total="1650.27">
+                <tr data-base-total="1650.27">
                     <td>13</td>
                     <td>SETC of 63 A DP MCB 10ka ,C-Curve with metalic enclosure .</td>
                     <td><input type="number" class="qty-input" value="1" min="1"></td>
                     <td>No</td>
                     <td>1650.27</td>
-                    <td>165.03</td>
-                    <td>1485.24</td>
                     <td>1650.27</td>
                     <td>Loa No :KHURDA ROAD DIVISION-ELECTRICAL / e-Tender-Elect-G-40-23 / 10351960089107 ,dtd 16.10.23</td>
                 </tr>
-                <tr data-base-cash="443.16" data-base-store="3988.44" data-base-total="4431.60">
+                <tr data-base-total="4431.60">
                     <td>14</td>
                     <td>Supply, erection, testing & commissioning of RCCBs 4P, 40A 100mA sensitivity and MCB 4P 32A 10KA C curve with 6 way enclosure. RCCB: Model no:0086 09,25A 100mA DP of Legrand.Enclosure:6078-85 FP RCBO enclosure of Legrand.</td>
                     <td><input type="number" class="qty-input" value="1" min="1"></td>
                     <td>No</td>
                     <td>4431.60</td>
-                    <td>443.16</td>
-                    <td>3988.44</td>
                     <td>4431.60</td>
                     <td>Sch H of Ecor Loa No:ECOR-CONST-HQ-ENGG / ETCPMIBBS2020031 / 01041780024838 dtd 28-08-2020</td>
                 </tr>
-                <tr data-base-cash="986.84" data-base-store="8881.54" data-base-total="9868.38">
+                <tr data-base-total="9868.38">
                     <td>15</td>
                     <td>Supply, erection and testing of 100 Amps, 4 Pole MCCB with metallic enclosure.</td>
                     <td><input type="number" class="qty-input" value="1" min="1"></td>
                     <td>No</td>
                     <td>9868.38</td>
-                    <td>986.84</td>
-                    <td>8881.54</td>
                     <td>9868.38</td>
                     <td>LoA No: KHURDA ROAD DIVISION-ELECTRICAL / e-Tender-Elect-G-22-19 / 10296960018826 Dated: 07/05/2020</td>
                 </tr>
+		    <tr data-base-total="3066.00">
+                    <td>16</td>
+                    <td>Supply of 63Amp MCCB TPN</td>
+                    <td><input type="number" class="qty-input" value="1" min="1"></td>
+                    <td>No</td>
+                    <td>3066.00</td>
+                    <td>3066.00</td>
+                    <td>PO No: 80235783200280 Dated 21.02.2024 of Sr.DMM/Izzatnagar Bareilly</td>
+                </tr>
                 <tr class="total-row">
                     <td colspan="5" style="text-align: right; font-weight: bold;">Selected Items Total:</td>
-                    <td id="total-cash">0.00</td>
-                    <td id="total-store">0.00</td>
                     <td id="total-amount">0.00</td>
                     <td></td>
                 </tr>
                 <!-- Additional calculation rows -->
                 <tr class="calculation-row">
                     <td colspan="5" style="text-align: right; font-weight: bold;">Subtotal-1</td>
-                    <td></td>
-                    <td></td>
                     <td id="Subtotal-1">0.00</td>
                     <td></td>
                 </tr>
                 <tr class="calculation-row">
                     <td colspan="5" style="text-align: right; font-weight: bold;">D&G Charge @12.5% of Subtotal-1</td>
-                    <td></td>
-                    <td></td>
                     <td id="dg-charge">0.00</td>
                     <td></td>
                 </tr>
                 <tr class="calculation-row">
                     <td colspan="5" style="text-align: right; font-weight: bold;">GST on D&G Charge @18%</td>
-                    <td></td>
-                    <td></td>
                     <td id="gst-dg">0.00</td>
                     <td></td>
                 </tr>
                 <tr class="calculation-row">
                     <td colspan="5" style="text-align: right; font-weight: bold;">Subtotal-2</td>
-                    <td></td>
-                    <td></td>
                     <td id="Subtotal-2">0.00</td>
                     <td></td>
                 </tr>
                 <tr class="calculation-row">
                     <td colspan="5" style="text-align: right; font-weight: bold;">Genl. Supervision @12.5% on Subtotal-2</td>
-                    <td></td>
-                    <td></td>
                     <td id="genl-supervision">0.00</td>
                     <td></td>
                 </tr>
@@ -949,8 +906,6 @@
         document.addEventListener('DOMContentLoaded', function() {
             const table = document.getElementById('estimateTable');
             const rows = table.querySelectorAll('tbody tr:not(.total-row):not(.calculation-row)');
-            const totalCashCell = document.getElementById('total-cash');
-            const totalStoreCell = document.getElementById('total-store');
             const totalAmountCell = document.getElementById('total-amount');
             const subtotal1Cell = document.getElementById('subtotal-1');
             const subtotal2Cell = document.getElementById('Subtotal-1');
@@ -964,39 +919,27 @@
             // Function to update row values based on quantity
             function updateRowValues(row) {
                 const qty = parseFloat(row.querySelector('.qty-input').value) || 0;
-                const baseCash = parseFloat(row.dataset.baseCash) || 0;
-                const baseStore = parseFloat(row.dataset.baseStore) || 0;
                 const baseTotal = parseFloat(row.dataset.baseTotal) || 0;
                 
                 // Update the displayed values
-                row.cells[5].textContent = (baseCash * qty).toFixed(2);
-                row.cells[6].textContent = (baseStore * qty).toFixed(2);
-                row.cells[7].textContent = (baseTotal * qty).toFixed(2);
+                row.cells[5].textContent = (baseTotal * qty).toFixed(2);
             }
             
             // Function to calculate totals and additional charges
            function calculateTotals() {
-    let totalCash = 0;
-    let totalStore = 0;
     let totalAmount = 0;
     
     // Calculate selected items totals
     rows.forEach(row => {
         if (row.classList.contains('selected')) {
             const qty = parseFloat(row.querySelector('.qty-input').value) || 0;
-            const baseCash = parseFloat(row.dataset.baseCash) || 0;
-            const baseStore = parseFloat(row.dataset.baseStore) || 0;
             const baseTotal = parseFloat(row.dataset.baseTotal) || 0;
             
-            totalCash += baseCash * qty;
-            totalStore += baseStore * qty;
             totalAmount += baseTotal * qty;
         }
     });
     
     // Update the main totals
-    totalCashCell.textContent = totalCash.toFixed(2);
-    totalStoreCell.textContent = totalStore.toFixed(2);
     totalAmountCell.textContent = totalAmount.toFixed(2);
     
     // Calculate additional charges (without freight and contingency)
@@ -1219,16 +1162,12 @@ function gatherEstimateData() {
             qty: row.cells[2].querySelector('input').value,
             unit: row.cells[3].textContent,
             rate: row.cells[4].textContent,
-            cash: row.cells[5].textContent,
-            store: row.cells[6].textContent,
-            total: row.cells[7].textContent,
-            reference: row.cells[8].textContent
+            total: row.cells[5].textContent,
+            reference: row.cells[6].textContent
         });
     });
     
     const calculations = {
-    totalCash: document.getElementById('total-cash').textContent,
-    totalStore: document.getElementById('total-store').textContent,
     subtotal2: document.getElementById('Subtotal-1').textContent,
     dgCharge: document.getElementById('dg-charge').textContent,
     gstDg: document.getElementById('gst-dg').textContent,
@@ -1271,17 +1210,31 @@ function generatePdf(data) {
     doc.text(`Date: ${formatDate(data.date)}`, 150, 30);
     doc.text('Allocation: Deposit Ordinary XPT', 15, 35);
 
-    doc.setFont(undefined, 'bold');
-    doc.text('Name of the Work:', 15, 45);
-    doc.setFont(undefined, 'normal');
-    doc.text(`Provision of Temporary service connection in favor of ${data.applicantName}`, 55, 45);
-    doc.text(`at ${data.address} for ${data.connectionFor}`, 55, 50);
+    const marginLeft = 15;
+const marginRight = 50;
+const pageWidth = doc.internal.pageSize.getWidth();
+const maxWidth = pageWidth - marginLeft - marginRight;
+
+doc.setFont(undefined, 'bold');
+doc.text('Name of the Work:', marginLeft, 45);
+
+doc.setFont(undefined, 'normal');
+
+// First line: Name and address together
+const line1 = `Provision of Temporary service connection in favor of ${data.applicantName} at ${data.address}`;
+const wrappedLine1 = doc.splitTextToSize(line1, maxWidth);
+doc.text(wrappedLine1, 55, 45); // Adjust X if needed for alignment
+
+// Second line: Connection purpose, wrapped within margins
+const line2 = `for ${data.connectionFor}`;
+const wrappedLine2 = doc.splitTextToSize(line2, maxWidth);
+doc.text(wrappedLine2, 55, 50); // Y=55 to place it clearly below
 
     doc.setFont(undefined, 'bold');
-    doc.text('Reference:', 28, 55);
+    doc.text('Reference:', 28, 60);
     doc.setFont(undefined, 'normal');
-    doc.text(`(i) ${data.reference}`, 55, 55);
-    doc.text(`(ii) Party application No. ${data.applicationNo} forwarded by ${data.section}`, 55, 60);
+    doc.text(`(i) ${data.reference}`, 55, 60);
+    doc.text(`(ii) Party application No. ${data.applicationNo} forwarded by ${data.section}`, 55, 65);
 
     // Prepare table
     const tableBody = data.items.map((item, i) => [
@@ -1290,24 +1243,21 @@ function generatePdf(data) {
         item.qty,
         item.unit,
         item.rate,
-        item.cash,
-        item.store,
         item.total,
         item.reference
     ]);
 
     // Total row as plain array (no objects!)
    tableBody.push([
-    '', '', '', '', '',
-    'Total', // now under Cash column (index 5)
-    parseFloat(data.calculations.totalStore).toFixed(2),
+    '', '', '', '',
+    'Total', // now under Rate column (index 4)
     parseFloat(data.calculations.subtotal2).toFixed(2),
     ''
 ]);
 
     doc.autoTable({
-    startY: 65,
-    head: [['Sl', 'Description', 'Qty', 'Unit', 'Rate', 'Cash', 'Store', 'Total', 'Reference']],
+    startY: 70,
+    head: [['Sl', 'Description', 'Qty', 'Unit', 'Rate', 'Total', 'Reference']],
     body: tableBody,
     theme: 'grid',
     styles: {
@@ -1325,14 +1275,12 @@ function generatePdf(data) {
     },
     columnStyles: {
         0: { halign: 'center', cellWidth: 8 },
-        1: { cellWidth: 56 },
+        1: { cellWidth: 65 },
         2: { halign: 'center', cellWidth: 10 },
         3: { halign: 'center', cellWidth: 12 },
         4: { halign: 'right', cellWidth: 17 },
-        5: { halign: 'right', cellWidth: 16 },
-        6: { halign: 'right', cellWidth: 17 },
-        7: { halign: 'right', cellWidth: 17 },
-        8: { cellWidth: 35, overflow: 'linebreak' }
+        5: { halign: 'right', cellWidth: 17 },
+        6: { cellWidth: 50, overflow: 'linebreak' }
     },
     didParseCell: function (data) {
         if (data.row.index === tableBody.length - 1) {
@@ -1357,8 +1305,8 @@ function generatePdf(data) {
     doc.setFontSize(10);
     for (let [label, value, bold] of charges) {
         doc.setFont(undefined, bold ? 'bold' : 'normal');
-        doc.text(label, 65, y);
-        doc.text(String(parseFloat(value).toFixed(2)), 165, y, { align: 'right' });
+        doc.text(label, 40, y);
+        doc.text(String(parseFloat(value).toFixed(2)), 142, y, { align: 'right' });
         y += 7;
     }
 
@@ -1446,6 +1394,79 @@ function openInGoogleDocs(content) {
     const blob = new Blob([content], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     window.open(`https://docs.google.com/document/create?preloadText=${encodeURIComponent(content)}`, '_blank');
+}
+function generateDocumentContent(data) {
+    let content = `East Coast Railway\n\n`;
+    content += `Estimate No.: Elect(G)/SBP/TSC/${new Date().getFullYear()}/${data.estimateNo}\t\tDate: ${formatDate(data.date)}\n`;
+    content += `Allocation: Deposit Ordinary XPT\n\n`;
+    content += `Name of the Work: Provision of Temporary service connection in favor of ${data.applicantName}\n`;
+    content += `at ${data.address} for ${data.connectionFor}\n\n`;
+    content += `Reference:\n(i) ${data.reference}\n(ii) Party application No. ${data.applicationNo} forwarded by ${data.section}\n\n`;
+    
+    // Add table header
+    content += `Sl.\tDescription\tQty\tUnit\tRate\tCash\tStore\tTotal\tReference\n`;
+    
+    // Add items
+    data.items.forEach((item, index) => {
+        content += `${index + 1}\t${item.description}\t${item.qty}\t${item.unit}\t${item.rate}\t${item.cash}\t${item.store}\t${item.total}\t${item.reference}\n`;
+    });
+    
+    // Add totals
+    content += `\t\t\t\t\tTotal\t${data.calculations.totalStore}\t${data.calculations.subtotal2}\n\n`;
+    
+    // Add charges
+    content += `Subtotal\t\t\t\t\t\t\t${data.calculations.subtotal2}\n`;
+    content += `D&G Charge @12.5% of Subtotal\t\t\t\t\t\t\t${data.calculations.dgCharge}\n`;
+    content += `GST on D&G Charge @18%\t\t\t\t\t\t\t${data.calculations.gstDg}\n`;
+    content += `Subtotal\t\t\t\t\t\t\t${data.calculations.subtotal3}\n`;
+    content += `Genl. Supervision Charge @12.5% of Subtotal\t\t\t\t\t\t\t${data.calculations.genlSupervision}\n\n`;
+    
+    // Page 2 content
+    content += `Energy Consumption Details\n\n`;
+    const phase = data.phaseType.includes("THREE") ? "3 Ph" : "1 Ph";
+    content += `Connected Load in KW     : ${data.load} KW, ${phase}\n`;
+    content += `Daily Consumption         : ${data.consumption} hours per day.\n`;
+    content += `Connection Period         : ${data.periodValue} ${data.periodUnit}\n\n`;
+    
+    const units = (parseFloat(data.load) * parseFloat(data.consumption) * parseFloat(data.periodValue)).toFixed(2);
+    content += `Electricity Consumption for ${data.periodValue} Days:  ${units} Units.\n\n`;
+    
+    content += `Summary of Cost.\n\n`;
+    content += `Description\tAmount\tGST@18%\n`;
+    content += `Security Deposit\t${data.costSummary.securityDeposit}\t0\n`;
+    content += `Service Connection Charge\t1500.00\t270.00\n`;
+    content += `Elect Supervision Charge\t${data.costSummary.genSupervisionCharge}\t${data.costSummary.genSupervisionGst}\n`;
+    content += `D&G Charge\t${data.costSummary.dgCharge}\t${data.costSummary.dgChargeGst}\n\n`;
+    
+    const totalRounded = Math.round(parseFloat(data.costSummary.totalRounded));
+    const gstTotalRounded = Math.round(parseFloat(data.costSummary.totalGst));
+    content += `Total (Rounded off)\tRs. ${totalRounded}\tRs. ${gstTotalRounded}\n\n`;
+    content += `Total Amount to deposit by Party : Rs.${totalRounded + gstTotalRounded}\n\n`;
+    content += `Note :\n`;
+    content += `If the Party chooses to deposit GST by Reverse Charge method.\n`;
+    content += `Amount to deposit with Railway     : Rs. ${totalRounded}\n`;
+    
+    return content;
+}
+
+function openInGoogleDocs(content) {
+    // Create a form
+    const form = document.createElement('form');
+    form.action = 'https://docs.google.com/document/create';
+    form.method = 'POST';
+    form.target = '_blank';
+    
+    // Add hidden input with content
+    const input = document.createElement('input');
+    input.type = 'hidden';
+    input.name = 'preloadText';
+    input.value = content;
+    form.appendChild(input);
+    
+    // Submit the form
+    document.body.appendChild(form);
+    form.submit();
+    document.body.removeChild(form);
 }
     </script>
 </body>
